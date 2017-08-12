@@ -18,13 +18,15 @@ matrix:
 
 addons:
   apt:
+    sources:
+      - precise
     packages:
-    - clang
-    - cmake
-    - g++
-    - gcc
-    - libeigen3-dev
-    - swig3.0
-    - libpython3.5-dev
+      - clang
+      - cmake
+      - g++
+      - gcc
+      - libeigen3-dev
+      - swig3.0
+      - libpython3.5-dev
 
 script: ./build.sh
