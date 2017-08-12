@@ -48,6 +48,7 @@ else
     mkdir Build -p
     cd Build
     pip3 install -r ../EKF/tests/pytest/requirements.txt
+    sudo pip3 install -U -f numpy
     cmake -DPythonTests=1 ../EKF
     make pytest
     cd ..
