@@ -24,5 +24,7 @@ addons:
     - g++
     - gcc
     - libeigen3-dev
+    - swig3.0
+    - libpython3.5-dev
 
 script: ./build.sh

@@ -44,9 +44,6 @@ then
     make
     cd ..
 else
-    # Install additional packages
-    sudo apt-get update
-    sudo apt-get install -y swig3.0 libpython3.5-dev
     # Build EKF shared library.
     mkdir Build -p
     cd Build
