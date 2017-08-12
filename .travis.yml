@@ -19,6 +19,6 @@ matrix:
 
 before_install:
   - sudo apt-get -qq update
-  - sudo apt-get install -y clang cmake g++ gcc libeigen3-dev swig3.0 python-dev
+  - sudo apt-get install -y clang cmake g++ gcc libeigen3-dev swig3.0 python-dev python3-numpy
 
 script: ./build.sh
