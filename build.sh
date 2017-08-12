@@ -47,7 +47,6 @@ else
     # Build EKF shared library.
     mkdir Build -p
     cd Build
-    pip3 install -r ../EKF/tests/pytest/requirements.txt
     cmake -DPythonTests=1 ../EKF
     make pytest
     make pytest-benchmark
