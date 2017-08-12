@@ -12,7 +12,7 @@ matrix:
       compiler: clang
       env: CC=clang CXX=clang++
     - os: linux
-      dist: xenial
+      dist: trusty
       compiler: gcc
       env: RUN_PYTEST=1
 
