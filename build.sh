@@ -47,7 +47,7 @@ else
     # Build EKF shared library.
     mkdir Build -p
     cd Build
-    pip install -r ../EKF/tests/pytest/requirements.txt
+    pip3 install -r ../EKF/tests/pytest/requirements.txt
     cmake -DPythonTests=1 ../EKF
     make pytest
     cd ..
