@@ -50,5 +50,6 @@ else
     pip3 install -r ../EKF/tests/pytest/requirements.txt
     cmake -DPythonTests=1 ../EKF
     make pytest
+    make pytest-benchmark
     cd ..
 fi
