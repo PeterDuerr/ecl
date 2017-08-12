@@ -1,3 +1,4 @@
+sudo: required
 language: cpp
 python:
 - '3.5'
@@ -16,17 +17,8 @@ matrix:
       compiler: gcc
       env: RUN_PYTEST=1
 
-addons:
-  apt:
-    sources:
-      - debian-sid
-    packages:
-      - clang
-      - cmake
-      - g++
-      - gcc
-      - libeigen3-dev
-      - swig3.0
-      - libpython3.5-dev
+before_install:
+  - sudo apt-get -qq update
+  - sudo apt-get install -y clang cmake g++ gcc libeigen3-dev swig3.0 libpython3.5-dev
 
 script: ./build.sh
